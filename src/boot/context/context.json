@@ -1,0 +1,6 @@
+{
+  "README": "le proxy fera le forward, cf. config/webpack/dev-server.js",
+  "backendURL": "http://localhost:3000/api",
+  "backendTimeout": 2000,
+  "debugging": true
+}

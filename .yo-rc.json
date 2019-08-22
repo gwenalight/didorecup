@@ -1,0 +1,13 @@
+{
+  "generator-icdc": {
+    "appName": "suiviDido",
+    "codeApp": "ai4.ccmt.dei.icdc.fr",
+    "appCode": "ai4.ccmt.dei.icdc.fr",
+    "appType": "angular",
+    "appCibleNgType": "v2",
+    "appCibleNgLib": "app",
+    "dslFile": "undefined/modele/dsl-model-suiviDido.xml",
+    "securityType": "passthrought",
+    "charte": "bootstrap"
+  }
+}

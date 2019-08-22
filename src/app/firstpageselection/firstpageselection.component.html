@@ -1,0 +1,36 @@
+<p>Bienvenu</p>
+<p>
+  Veuillez choisir la façon dont vous voulez trouver les objests de diffusison
+</p>
+<div class="testhighchart">
+  <button class="btn btn-outline-primary" (click)="goTestHighChart()">Test highchart graph</button>
+</div>
+
+<div class="selection">
+  </p><button class="btn btn-outline-primary" (click)="goToByApplication()">Voir les objets pivoits diffusé par application</button>
+  <div class="element" *ngIf="findDiffusionByIdApplication"> <!-- appel dans ngif les attributs definit dans le .ts -->
+    <form>
+      <label>Entrer le code de l'application</label>
+      <input type="text" name="idApplication" #idApplication/>
+      <button type="submit" (click)="goToListByApplication(idApplication)">Valider</button>
+    </form>
+  </div>
+</p><button class="btn btn-outline-primary" (click)="goToByReferentiel()">Voir les objets pivoits diffusé par référentiel</button>
+<div class="element" *ngIf="findDiffusionByIdReferentiel">
+  <form>
+    <label>Entrer le nom du référentiel</label>
+    <input type="text" name="idReferentiel" #idReferentiel />
+    <button type="submit" (click)="goToListByReferentiel(idReferentiel)">Valider</button>
+  </form>
+</div>
+</p><button class="btn btn-outline-primary" (click)="goToByApplicationAndByReferentiel()">Voir les objets pivoits diffusé par application et référentiel</button>
+  <div class="element" *ngIf="findDiffusionByIdApplicationAndIdReferentiel">
+    <form>
+      <label>Entrer le code de l'application</label>
+      <input type="text" name="idApplication"  #idApplication #idReferentiel/>
+      <label>Entrer le nom du référentiel</label>
+      <input type="text" name="idReferentiel" #idReferentiel/>
+      <button type="submit" (click)="goToListByApplicationAndByReferentiel(idApplication, idReferentiel)">Valider</button>
+    </form>
+  </div>
+</div>

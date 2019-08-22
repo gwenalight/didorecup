@@ -1,0 +1,12 @@
+node_modules
+dist
+reports
+config
+package-lock.json
+.git
+.project
+.idea
+.vscode
+.nyc_output
+.sonarlint
+.stats

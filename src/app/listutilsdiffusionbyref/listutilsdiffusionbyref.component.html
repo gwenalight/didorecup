@@ -1,0 +1,22 @@
+<p>
+ Liste des objets de diffusion en fonction du référentiel : {{idReferentiel}}
+</p>
+
+<div class="cold-md-12">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Objets pivots</th>
+        <th>Code Application</th>
+        <th>Date de début du lot</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of utilsDiffusion">
+        <td>{{u.utilsDiffusionPK.idLot.idLot}}</td>
+        <td>{{u.utilsDiffusionPK.idApplication}}</td>
+        <td>{{u.utilsDiffusionPK.idLot.dateDebutLot}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

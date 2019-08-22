@@ -1,0 +1,51 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "suiviDido": {
+      "root": "",
+      "sourceRoot": "",
+      "prefix": "ai4.ccmt.dei.icdc.fr",
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "main": "src/main.browser.ts",
+            "tsConfig": "tsconfig.json",
+            "outputPath": "dist",
+            "index": "src/index.html"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "suiviDido",
+  "cli": {
+    "packageManager": "npm",
+    "analytics": false
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "inlineStyle": false,
+      "inlineTemplate": false,
+      "spec": false,
+      "prefix": "ai4.ccmt.dei.icdc.fr",
+      "styleExt": "css"
+    },
+    "@schematics/angular:directive": {
+      "spec": false,
+      "prefix": "ai4.ccmt.dei.icdc.fr"
+    },
+    "@schematics/angular:guard": {
+      "spec": false
+    },
+    "@schematics/angular:pipe": {
+      "spec": false
+    },
+    "@schematics/angular:service": {
+      "spec": false
+    }
+  }
+}

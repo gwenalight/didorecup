@@ -1,0 +1,28 @@
+<!-- <highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 100%; height: 400px; display: block;"
+></highcharts-chart> -->
+
+<p>
+    Voivi la liste des lots de diffuision
+  </p>
+
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>lot</th>
+          <th>Référentiel</th>
+          <th>Date de debut du lot</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of utilsDiffusion">
+            <td>{{ u.utilsDiffusionPK.idLot.idLot }}</td>
+            <td>{{ u.utilsDiffusionPK.idLot.idReferentiel }}</td>
+            <td>{{ u.utilsDiffusionPK.idLot.dateDebutLot }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

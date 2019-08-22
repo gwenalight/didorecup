@@ -1,0 +1,114 @@
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Descriptif">
+    <ng-template ngbPanelContent>
+      <p>
+        Ceci est un template de projet Angular (ICDC)
+      </p>
+      <h4>Stack technique</h4>
+      <ul>
+        <li>Angular v7+</li>
+        <li>Webpack v4+</li>
+        <li>Typescript 3.1.3</li>
+        <li>Ngx-translate 11.0.1 - <a href="https://github.com/ngx-translate/core" target="_blank">doc</a></li>
+        <li>Angular CLI : 7.1.0</li>
+        <li>Tests unitaires : Mocha, Chai, Sinon</li>
+        <li>Tests IHM : Protractor !!</li>
+      </ul>
+
+      <h4>Documentation</h4>
+      <ul>
+        <li>
+          <a href="https://forge-confluence.serv.cdc.fr/pages/viewpage.action?pageId=239960144" target="_blank">Environnement
+            de
+            développement</a>
+        </li>
+        <li>
+          <a href="https://forge-confluence.serv.cdc.fr/display/CCMTA/Application+web" target="_blank">Détails des
+            fichiers générés</a>
+        </li>
+        <li>
+          <a href="https://forge-confluence.serv.cdc.fr/pages/viewpage.action?pageId=239960167" target="_blank">Tests
+            unitaires avec
+            Mocha,
+            Chai et Sinon</a>
+        </li>
+      </ul>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Progressive Web Apps">
+    <ng-template ngbPanelContent>
+      <p>Le sous-générateur <code>yo icdc:pwa</code> est disponible pour convertir une application Angular en une application PWA.
+        On se base sur les plugins suivants :
+      </p>
+      <ul>
+        <li>
+          <a href="https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin#configuration" target="_blank">Workbox webpack Plugins</a>
+        </li>
+        <li>
+          <a href="https://github.com/arthurbergmz/webpack-pwa-manifest" target="_blank">Webpack pwa manifest Plugin</a>
+        </li>
+      </ul>
+      <p>La configuration de ces plugins est externalisée dans les fichiers : <code>manifest-config.js</code> et <code>sw-config.js</code>.</p>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Build et Lancement">
+    <ng-template ngbPanelContent>
+      <p>Déployer le projet sur le serveur de développement local, l'apllication est disponible sur localhost:3000
+        : </p>
+      <code>
+        npm start
+      </code>
+      <br/><br/>
+      <p>Construire un artéfact optimisé pour la production et prêt à être déployé sur un serveur de :</p>
+      <code>
+        npm run build:package
+      </code>
+      <br/><br/>
+      <p>Lancer un serveur express avec le bundle construit sur le repretoire dist :</p>
+      <code>
+        npm run server:prod
+      </code>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Tests et Qualimétrie">
+    <ng-template ngbPanelContent>
+      <p>Lancer les tests unitaires avec Mocha : </p>
+      <code>
+        npm run test
+      </code>
+      <br/><br/>
+      <p>Lancer les tests IHM protractor :</p>
+      <code>
+        npm run e2e
+      </code>
+      <br/><br/>
+      <p>Lancer les tests unitaires en mode serveur sur le port 8888 (http://localhost:8888, utile pour débugger ses
+        TU)
+        :</p>
+      <code>
+        npm run test:server
+      </code>
+      <br/><br/>
+      <p>Lancer l'analyse tslint + codelyzer. Les régles sont dans le fichier tslint.json :</p>
+      <code>
+        npm run lint
+      </code>
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Angular CLI">
+    <ng-template ngbPanelContent>
+      <p>Le projet est compatible Angular CLI (sauf pour la build et le lancement - ng serve et ng build)</p>
+      <p>
+        Génère un composant Angular dans le répertoire courant.
+        Changer <em>component</em> par (<em>directive, pipe, service, class, guard, interface, enum, module</em>) :
+      </p>
+      <code>
+        ng g component mon-super-composant
+      </code>
+      <br/><br/>
+      <p>
+        <a href="https://angular.io/cli" target="_blank">Wiki Angular cli</a>
+      </p>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
